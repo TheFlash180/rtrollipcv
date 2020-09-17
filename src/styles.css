@@ -2,6 +2,7 @@
 body{
   margin: 0;
   padding: 0;
+  background-color: rgb(11, 199, 199);
 }
 .container{
   text-align: center;
@@ -22,7 +23,7 @@ body{
   color: #000000;
 }
 .btn1:hover{
-  color:#3fe40d;
+  color:rgb(11, 199, 199);
 }
 .btn::before{
   content: "";
@@ -30,7 +31,7 @@ body{
   left: 0;
   width: 100%;
   height: 0%;
-  background: #000000;
+  background: #1b1a1a;
   z-index: -1;
   transition: 1s;
 }
@@ -40,4 +41,10 @@ body{
 }
 .btn1:hover::before{
   height: 180%;
+}
+.lbl1{
+  text-align: center;
+  font-size: 200%;
+  font-family: Lato;
+  color: #ffffff;
 }
