@@ -1,51 +1,89 @@
 /* Add application styles & imports to this file! */
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+.wrapper{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: linear-gradient(90deg,rgba(2,0,.6,1) 0%, rgb(135, 135, 150)35%, rgb(80, 83, 83) 100%);
+}
+
+li, a, button{
+  margin-left: 10px;
+  font-family: "montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 25px;
+  color: #000000;
+  text-decoration: none;
+}
+
+.nav_links{
+  list-style: none;
+}
+
+.nav_links li{
+  display: inline-block;
+}
+
+.nav_links li a{
+  transition: all 0.6s ease 0s;
+}
+
+.nav_links li a:hover{
+  color: #edf0f1;
+}
+
+label{
+  font-family: "eczar";
+  font-weight: bold;
+  font-size: 30px;
+  color: #edf0f1;
+  text-decoration: none;
+  margin-right: auto;
+  margin-left: 8px;
+}
+
+button{
+  padding: 9px 25px;
+  background-color: rgb(15, 174, 236);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.6s ease 0s;
+  margin-left: 20px;
+}
+
+button:hover{
+    background-color: rgb(0, 238, 255);
+}
+
+header{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 30px 10%;
+  }
+
 body{
   margin: 0;
   padding: 0;
-  background-color: rgb(11, 199, 199);
+  font-family: montserrat;
 }
+
 .container{
   text-align: center;
 }
-.btn{
-  border: 2px solid #000000;
-  background: none;
-  padding: 10px 20px;
-  font-size: 20px;
-  font-family: "Lato";
-  cursor: pointer;
-  margin: 10px;
-  transition: 0.8s;
-  position: relative;
-  overflow: hidden;
-}
-.btn1{
-  color: #000000;
-}
-.btn1:hover{
-  color:rgb(12, 223, 223);
-}
-.btn::before{
-  content: "";
-  position: absolute;
-  left: 0;
-  width: 100%;
-  height: 0%;
-  background: #1b1a1a;
-  z-index: -1;
-  transition: 1s;
-}
-.btn1::before{
-  top:0;
-  border-radius: 0 0 50% 50%;
-}
-.btn1:hover::before{
-  height: 180%;
-}
+
 .lbl1{
   text-align: center;
-  font-size: 200%;
-  font-family: Lato;
+  font-size: 40px;
+  font-family: Eczar;
   color: #ffffff;
 }
 
@@ -53,6 +91,106 @@ body{
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 10%;
-  height: 10%;
+  width: 40%;
+  height: 40%;
+}
+
+.Logo{
+  width: 8%;
+  height: 8%;
+  margin-right: 2px;
+}
+
+.h1{
+  font-size: 86px;
+  font-family: "eczar";
+  font-weight: bolder;
+}
+
+.box div{
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: 4px solid #ffffff
+}
+
+.box div:nth-child(1){
+  top: 12%;
+  left: 42%;
+  animation: animate 10s linear infinite;
+}
+
+.box div:nth-child(2){
+  top: 50%;
+  left: 70%;
+  animation: animate 7s linear infinite;
+}
+
+.box div:nth-child(3){
+  top: 45%;
+  left: 6%;
+  animation: animate 9s linear infinite;
+}
+
+.box div:nth-child(4){
+  top: 20%;
+  left: 60%;
+  animation: animate 10s linear infinite;
+}
+.box div:nth-child(5){
+  top: 67%;
+  left: 10%;
+  animation: animate 6s linear infinite;
+}
+.box div:nth-child(6){
+  top: 80%;
+  left: 70%;
+  animation: animate 12s linear infinite;
+}
+.box div:nth-child(7){
+  top: 17%;
+  left: 6%;
+  animation: animate 15s linear infinite;
+}
+.box div:nth-child(8){
+  top: 32%;
+  left: 25%;
+  animation: animate 16s linear infinite;
+}
+.box div:nth-child(9){
+  top: 90%;
+  left: 25%;
+  animation: animate 9s linear infinite;
+}
+.box div:nth-child(10){
+  top: 20%;
+  left: 90%;
+  animation: animate 5s linear infinite;
+}
+.box div:nth-child(11){
+  top: 32%;
+  left: 100%;
+  animation: animate 16s linear infinite;
+}
+.box div:nth-child(12){
+  top: 50%;
+  left: 90%;
+  animation: animate 9s linear infinite;
+}
+.box div:nth-child(13){
+  top: 80%;
+  left: 80%;
+  animation: animate 5s linear infinite;
+}
+
+@keyframes animate{
+  0%{
+    transform: scale(0)translate(0) rotate(0);
+    opacity: 1;
+  }
+  100%{
+    transform: scale(1.3)translate(-90px) rotate(360deg);
+    opacity: 0;
+  }
 }
