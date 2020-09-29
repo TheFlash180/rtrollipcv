@@ -6,17 +6,145 @@
   box-sizing: border-box;
 }
 
+.content{
+  width: 100vw;
+  height: 8vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.slider-wrapper{
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.slider{
+  height: 25px;
+  padding-left: 15px;
+  overflow: hidden;
+  position: relative;
+}
+
+.skill{
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.lblSkill{
+  color: black;
+  font-size:45px;
+  text-align: center;
+  font-family:"montserrat", sans-serif;
+  text-decoration: underline;
+  margin-top: 8vh;
+  position: relative;
+}
+
 .lbl5{
-  color: rgb(34, 236, 34);
+  color: rgb(13, 157, 214);
   font-weight: bold;
 }
 
 .wrapper{
   position: relative;
-  width: 100%;
+  width: 100vw;
   height: 100%;
   overflow: hidden;
   background: linear-gradient(90deg,rgba(2,0,.6,1) 0%, rgb(135, 135, 150)35%, rgb(80, 83, 83) 100%);
+}
+
+.wrapper2{
+  width: 800px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.wrapper2 h1{
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 8px;
+  position: relative;
+  text-decoration: underline;
+}
+
+.wrapper2 h2{
+  text-align: left;
+}
+.line{
+  height: 25px;
+  min-width: 800px;
+  margin: 0 auto 10px;
+  line-height: 25px;
+  font-size: 14px;
+  color: rgb(0, 255, 21);
+  padding:0 0 0 10px;
+  position: relative;
+}
+
+.line::before{
+  content: '';
+  width: 100%;
+  position: absolute;
+  left: 0;
+  height: 25px;
+  top: 0;
+  z-index: -2;
+  background: rgb(185, 174, 174);
+}
+
+.line::after{
+  content: '';
+  background: rgb(0, 0, 0);
+  left: 0;
+  height: 25px;
+  top: 0;
+  z-index: -1;
+  transition: 0.8s;
+  display: block;
+  width: 100%;
+  animation: animate 1 4s;
+  position: absolute;
+}
+
+.line1::after{
+  max-width: 70%;
+}
+.line2::after{
+  max-width: 80%;
+}
+.line3::after{
+  max-width: 78%;
+}
+.line4::after{
+  max-width: 60%;
+}
+.line5::after{
+  max-width: 95%;
+}
+.line6::after{
+  max-width: 65%;
+}
+.line7::after{
+  max-width: 89%;
+}
+
+@keyframes animate{
+  0%{
+    width: 0;
+  }
+  100%{
+    width: 100%;
+  }
 }
 
 li, a, button{
@@ -203,30 +331,6 @@ body{
   }
 }
 
-.content{
-  width: 100vw;
-  height: 8vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.slider-wrapper{
-  font-size: 20px;
-  color: rgb(0, 0, 0);
-  font-weight: bold;
-  text-transform: uppercase;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.slider{
-  height: 25px;
-  padding-left: 15px;
-  overflow: hidden;
-}
-
 .slider div{
   color: rgb(255, 255, 255);
   height:25px;
@@ -237,7 +341,7 @@ body{
 }
 
 .slider-text1{
-  background: lightgreen;
+  background: rgb(52, 219, 52);
   animation: slide 10s linear infinite;
 }
 .slider-text2{
@@ -247,7 +351,7 @@ body{
   background: rgb(0, 0, 0);
 }
 .slider-text4{
-  background: lightskyblue;
+  background: rgb(15, 146, 228);
 }
 .slider-text5{
   background: rgb(13, 29, 255);
