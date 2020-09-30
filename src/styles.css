@@ -16,17 +16,17 @@
 }
 
 .slider-wrapper{
+  display: flex;
   color: rgb(0, 0, 0);
   font-weight: bold;
   text-transform: uppercase;
-  display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
 }
 
 .slider{
-  height: 5vh;
+  height: 3vw;
   padding-left: 15px;
   overflow: hidden;
   position: relative;
@@ -45,8 +45,10 @@
   margin-right: auto;
   font-family:"montserrat", sans-serif;
   text-decoration: underline;
-  margin-top: 4vh;
+  margin-top: 2vw;
+  margin-bottom: 2vw;
   position: relative;
+  height: 2vw;
 }
 
 .lbl5{
@@ -71,17 +73,18 @@
 .wrapper2 h1{
   text-align: center;
   text-transform: uppercase;
-  margin-top: 8px;
   position: relative;
   text-decoration: underline;
 }
 
 .wrapper2 h2{
   text-align: left;
+  font-size: 1.5vw;
 }
 .line{
-  margin: 0 auto 10px;
-  line-height: 25px;
+  margin: 0 auto 1vw;
+  line-height: 2vw;
+  font-size: 1.3vw;
   font-weight: bold;
   color: rgb(0, 255, 21);
   padding:0 0 0 10px;
@@ -93,7 +96,7 @@
   width: 100%;
   position: absolute;
   left: 0;
-  height: 25px;
+  height: 2vw;
   top: 0;
   z-index: -2;
   background: rgb(155, 153, 153);
@@ -103,7 +106,7 @@
   content: '';
   background: rgb(0, 0, 0);
   left: 0;
-  height: 25px;
+  height: 2vw;
   top: 0;
   z-index: -1;
   transition: 0.8s;
@@ -227,8 +230,8 @@ body{
 }
 
 .Logo{
-  width: 8%;
-  height: 8%;
+  width: 7%;
+  height: 7%;
   margin-right: 2px;
 }
 
