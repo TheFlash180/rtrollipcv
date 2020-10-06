@@ -80,6 +80,7 @@
 .wrapper2 h2{
   text-align: left;
   font-size: 1.5vw;
+  position: relative;
 }
 .line{
   margin: 0 auto 1vw;
@@ -420,17 +421,20 @@ body{
 }
 
 .weather-container{
-  background: #ccc;
+  background: rgb(255, 255, 255);
   text-align: center;
+  position: relative;
 }
 
 .weather{
   font-size: 3vw;
   margin: 0;
+  position: relative;
 }
 
 .temp{
   font-size: 3vw;
   margin: 0;
   font-weight: bold;
+  position: relative;
 }
