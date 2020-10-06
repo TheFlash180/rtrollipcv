@@ -5,11 +5,12 @@
     <title>Rickus Trollip CV</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="styles.css">
-    <script src="https://cod.jquery.com/jquery-3.3.1.minmjs" integrity="sha256-FgpCb/KJQlLNf0u91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="app.js"></script>
   </head>
   <body>  
+    <my-app></my-app>
     <div class="wrapper" style="width: 105%">
       <div class="box">
         <div></div>
@@ -28,7 +29,7 @@
       </div>
 
   <header>
-    <img class="Logo" src="data:image/png;base64,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" alt="" >
+    <img class="Logo" src="https://scontent.fpry2-1.fna.fbcdn.net/v/t1.0-1/p240x240/72409839_2339145123066646_3783786279909457920_o.jpg?_nc_cat=111&_nc_sid=dbb9e7&_nc_ohc=le7mPIW77xIAX9sSZjF&_nc_pt=5&_nc_ht=scontent.fpry2-1.fna&tp=6&oh=c4bcd9f2f93b2ee50119fd7f8b85d287&oe=5FA2CD18" alt="" >
     <label class="name" style="font-size:2.5vw;">
       Rickus Trollip
     </label>

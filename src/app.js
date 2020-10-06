@@ -1,4 +1,4 @@
-var city = "krugersdorp"
+var city = "krugersdorp";
 $.getJSON("https://api.openweathermap.org/data/2.5/weather?q="+city+"&appid=4f15d36ca3825e612d82aa264ca86d9b", function(data){
 
   console.log(data);
